@@ -6,7 +6,7 @@ int main()
     int age;
     scanf("%s%d",&name,&age);
     scanf("%s",&hobby);
-    printf("Nmae: %s \n", name);
+    printf("Nmae: %s ", name);
     printf("Age: %d \n",age);
     printf("Hobby: %s \n",hobby);
 
