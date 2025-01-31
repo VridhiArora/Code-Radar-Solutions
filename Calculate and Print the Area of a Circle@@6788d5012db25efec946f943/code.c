@@ -5,5 +5,5 @@ int main()
     float pie=3.14;
     scanf("%f",r);
     area=pie*r*r;
-    printf("Area: %f",area);
+    printf("Area: %.2f",area);
 }
