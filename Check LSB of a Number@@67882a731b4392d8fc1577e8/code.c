@@ -9,6 +9,6 @@ int main()
     }
     else
     {
-        printf("Non Set");
+        printf("Not Set");
     }
 }
