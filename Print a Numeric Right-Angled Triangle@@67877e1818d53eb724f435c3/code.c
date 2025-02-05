@@ -12,7 +12,7 @@
 
     for (i = 1; i <= n; i++) {  // Controls the number of rows
         for (j = 1; j <= i; j++) {  // Prints numbers from 1 to i
-            printf("%d", j);
+            printf("%d", j + " ");
         }
         printf("\n");  // Moves to the next line
      }
