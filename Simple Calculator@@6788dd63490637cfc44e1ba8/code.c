@@ -2,29 +2,27 @@
 int main()
 {
     char op;
-    int a,b,res;
+    int a,b;
     scanf("%d%d%c",&a,&b,&c);
     switch (op)
     {
         case '+':
-        res=a+b;
-        printf("%d",res);
+        printf("%d",a+b);
         break;
         case '-':
-        res=a-b;
-        printf("%d",res);
+       
+        printf("%d",a-b);
         break;
         case '*':
-        res=a*b;
-        printf("%d",res);
+       
+        printf("%d",a*b);
         break;
         case '/':
-        res=a/b;
-        printf("%d",res);
+       
+        printf("%d",a/b);
         break;
         default:
-        printf("Error");
-        break;
+        printf("error");
         
     }
 
