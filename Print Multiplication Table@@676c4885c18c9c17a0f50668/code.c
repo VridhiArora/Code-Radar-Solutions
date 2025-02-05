@@ -9,7 +9,7 @@
 
 //     // Printing the multiplication table
      while (i <= 10) {
-         printf("%d * %d = %d\n", n, i, n * i);  // Correct format for printf
+         printf("%d x %d = %d\n", n, i, n * i);  // Correct format for printf
          i++;  // Incrementing i
      }
     
