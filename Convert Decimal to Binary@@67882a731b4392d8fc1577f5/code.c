@@ -5,7 +5,7 @@ int main() {
     int num, binary[32], i = 0;
 
     // Taking input from user
-    printf("Enter a decimal number: ");
+   
     scanf("%d", &num);
 
     // Edge case for 0
