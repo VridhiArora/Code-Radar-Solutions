@@ -10,7 +10,7 @@ int main() {
 
     // Edge case for 0
     if (num == 0) {
-        printf(" 0\n");
+        printf("0\n");
         return 0;
     }
 
