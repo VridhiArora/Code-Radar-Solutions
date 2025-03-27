@@ -32,7 +32,7 @@ int main() {
 
     // If second largest is still -1, it means all elements were the same
     if (sec == -1) {
-        printf("No second largest number\n");
+        printf("-1");
     } else {
         printf("%d\n", sec);
     }
