@@ -13,7 +13,7 @@ int main() {
 
     // Edge case: If there is only one element
     if (n < 2) {
-        printf("No second largest number\n");
+        printf("-1");
         return 0;
     }
 
