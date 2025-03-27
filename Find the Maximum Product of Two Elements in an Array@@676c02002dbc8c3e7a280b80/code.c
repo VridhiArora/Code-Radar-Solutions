@@ -11,7 +11,7 @@ int main() {
     }
 
     // Initialize two largest numbers
-    int max1 = 0, max2 = 0, min1=0;min2=0;
+    int max1 = 0, max2 = 0, min1 = 0; min2 = 0;
 
     // Find the two largest numbers
     for (int i = 0; i < n; i++) {
