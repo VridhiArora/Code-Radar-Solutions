@@ -1,30 +1,34 @@
-// Your code here...
 #include <stdio.h>
-int main()
-{
+
+int main() {
     int n;
+
+    // Taking the number of elements
     
-    
-    scanf("%d",&n);
+    scanf("%d", &n);
+
     int arr[n];
+
+    // Taking input for the array
     
-    
-    for(int i=0;i<=n;i++)
-    {
-        scanf("%d\n",&arr[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    
-    
-    
-    printf("\n");
-    
-    int temp=arr[0];
-    for(int i=1;i<=n;i++)
-    {
-        if(arr[i]>temp)
-        {
-            temp=arr[i];
+
+    // Finding the largest and second largest number
+    int largest = arr[0], secondLargest = -1;
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] > secondLargest && arr[i] < largest) {
+            secondLargest = arr[i];
         }
     }
-    printf("%d",temp);
-} 
+
+    // Printing the second largest number
+    printf("%d\n", secondLargest);
+
+    return 0;
+}
