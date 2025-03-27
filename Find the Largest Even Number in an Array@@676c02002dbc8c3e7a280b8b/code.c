@@ -21,10 +21,11 @@ int main()
         {
             if(even<arr[i])
             {
+
                 even = arr[i];
-                
+                printf("%d",even);
             }
-        }printf("%d",even);
+        }
         
        
     }
