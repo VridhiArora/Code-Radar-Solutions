@@ -12,16 +12,22 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int even=arr[0];
+    int even=-100000000;
+    int find=0;
     
     for (int i = 0; i < n; i++) 
     {
         if(arr[i]%2==0)
         {
-            if(even>arr[i])
+            if(even<arr[i])
             {
-                printf("%d",even);
+                even = arr[i];
+                
             }
+        }printf("%d",even);
+        else 
+        {
+            printf("-1");
         }
        
     }
