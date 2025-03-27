@@ -20,7 +20,7 @@ int main()
         {
             if(even>arr[i])
             {
-                printf("%d",even)
+                printf("%d",even);
             }
         }
        
