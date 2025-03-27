@@ -11,17 +11,13 @@ int main()
     }
     for (int i = 0; i < n; i++)
      {
-       int largest=arr[i];
-       int second=arr[i+1];
-     
-       if(largest>second)
-    {
-        printf("Not Sorted");
-        break;
+        if (arr[i] > arr[i + 1]) {
+            printf("Not Sorted\n");
+            return 0;  // Exit early since it's not sorted
+        }
     }
-    else
-    {
-        printf("Sorted");
-    }
-     }
+
+    // If we finish the loop, the array is sorted
+    printf("Sorted\n");
+    return 0;
 }
