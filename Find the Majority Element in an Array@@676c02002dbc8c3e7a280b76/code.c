@@ -22,6 +22,6 @@ int main() {
     }
 
     // If no duplicate found
-    printf("No Repeating Element\n");
+    printf("-1");
     return 0;
 }
