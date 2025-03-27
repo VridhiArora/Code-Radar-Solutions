@@ -13,7 +13,7 @@ int main()
      {
        int largest=arr[i];
        int second=arr[i+1];
-     }
+     
        if(largest>second)
     {
         printf("Not Sorted");
@@ -22,4 +22,5 @@ int main()
     {
         printf("Sorted");
     }
+     }
 }
