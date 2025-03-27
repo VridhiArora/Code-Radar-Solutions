@@ -17,6 +17,7 @@ int main()
        if(largest>second)
     {
         printf("Not Sorted");
+        break;
     }
     else
     {
