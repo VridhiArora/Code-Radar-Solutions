@@ -1,25 +1,23 @@
-// Your code here...
 #include <stdio.h>
-int main()
-{
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
 
+    // Read array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < n; i++)
-     {
 
-        if (arr[i] > arr[i + 1]) {
+    // Check if the array is sorted
+    for (int i = 0; i < n - 1; i++) {  
+        if (arr[i] > arr[i + 1]) {  // Only check if it decreases
             printf("Not Sorted\n");
-          
-            return 0;  // Exit early since it's not sorted
+            return 0;  
         }
     }
 
-    // If we finish the loop, the array is sorted
-    printf("Sorted\n");
+    printf("Sorted\n");  // If loop completes, it's sorted
     return 0;
 }
