@@ -19,7 +19,7 @@ for(int i=0;i<n;i++)
     sec=largest;
     largest=arr[i];    
     }
-    else if(arr[i] > secondLargest && arr[i] < largest)
+    else if(arr[i] > sec && arr[i] < largest)
     {
     printf("%d",sec);
     }
