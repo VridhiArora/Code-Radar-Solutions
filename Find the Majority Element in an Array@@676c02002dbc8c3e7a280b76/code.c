@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
@@ -11,17 +10,25 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Find first repeating element
-    for (int i = 0; i < n - 1; i++) {  
-        for (int j = i + 1; j < n; j++) {  
-            if (arr[i] == arr[j]) {  // Found first duplicate
-                printf("%d\n", arr[i]);
-                return 0;  // Exit after finding the first repeating element
+    // Check for majority element
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+
+        // Count occurrences of arr[i]
+        for (int j = 0; j < n; j++) {
+            if (arr[j] == arr[i]) {
+                count++;
             }
+        }
+
+        // If count is greater than n/2, print the element and exit
+        if (count > n / 2) {
+            printf("%d\n", arr[i]);
+            return 0;
         }
     }
 
-    // If no duplicate found
-    printf("-1");
+    // No majority element found
+    printf("-1\n");
     return 0;
 }
