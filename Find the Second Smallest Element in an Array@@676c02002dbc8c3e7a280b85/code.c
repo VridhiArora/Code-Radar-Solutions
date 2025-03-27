@@ -18,10 +18,11 @@ int main() {
     }
 
     // Initialize largest and second largest properly
+    int i;
     int largest = arr[0], sec = arr[i+1];
 
     // Find largest element first
-    for (int i = 1; i < n; i++) {
+    for ( i = 1; i < n; i++) {
         if (arr[i] > largest) {
             largest = arr[i];
         }
