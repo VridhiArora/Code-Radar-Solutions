@@ -13,10 +13,14 @@ int main() {
 
     // Check first repeating element
     for (int i = 0; i < n ; i++) {  
-        if (arr[i] == arr[i + 1]) {  
+        for (int j = i + 1; j < n; j++){
+
+        
+        if (arr[i] == arr[j]) {  
             printf("%d",arr[i]);
             return 0;  
         }
+    }
     }
 
     
