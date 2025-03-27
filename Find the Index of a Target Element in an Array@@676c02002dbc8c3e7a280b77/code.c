@@ -19,15 +19,14 @@ int main() {
    {
     if(arr[i]==target)
     {
+        printf("%d",i);
         found=1;
         break;
+        
     }
    }
-   if(found){
-    printf("%d",i);
-   }
-   else 
-   {
+   if(!found){
     printf("-1");
    }
+   
 }
