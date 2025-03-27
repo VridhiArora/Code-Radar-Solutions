@@ -8,19 +8,15 @@ int main()
     int arr[n];
     
    
-    for(int i=0;i<=n;i++)
+    for(int i=0;i<n;i++)
     {
-        scanf("%d ",&arr[i]);
+        scanf("%d",&arr[i]);
        
     }
     
-    
-    
-    printf("\n");
-    
     int temp=arr[0];
     int temp2=arr[0];
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<n;i++)
     {
         if(arr[i]>temp)
         {
@@ -31,8 +27,7 @@ int main()
             temp2=arr[i];
         }
     }
-    printf("%d",temp);
-    printf("%d",temp2);
+   printf("%d %d\n", temp2, temp);
 }    
     
     
