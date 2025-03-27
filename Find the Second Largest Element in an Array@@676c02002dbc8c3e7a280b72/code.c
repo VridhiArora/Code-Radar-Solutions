@@ -18,7 +18,7 @@ int main() {
     }
 
     // Initialize largest and second largest
-    int largest = arr[0], sec = -1;
+    int largest = arr[0], sec = -1000000;
 
     // Finding largest and second largest
     for (int i = 1; i < n; i++) { 
@@ -31,7 +31,7 @@ int main() {
     }
 
     // If second largest is still -1, it means all elements were the same
-    if (sec == -1) {
+    if (sec == -1000000) {
         printf("-1");
     } else {
         printf("%d\n", sec);
