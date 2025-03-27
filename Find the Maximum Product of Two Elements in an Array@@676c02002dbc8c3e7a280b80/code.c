@@ -21,6 +21,13 @@ int main() {
         } else if (arr[i] > max2) {
             max2 = arr[i];
         }
+        if (arr[i] < min1) {
+            min2 = min1;
+            min1 = arr[i];
+        } else if (arr[i] < min2) {
+            min2 = arr[i];
+        }
+    }
     }
 
     // Print the maximum product
