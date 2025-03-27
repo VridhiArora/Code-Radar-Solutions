@@ -11,8 +11,10 @@ int main()
     }
     for (int i = 0; i < n; i++)
      {
+
         if (arr[i] > arr[i + 1]) {
             printf("Not Sorted\n");
+            break;
             return 0;  // Exit early since it's not sorted
         }
     }
