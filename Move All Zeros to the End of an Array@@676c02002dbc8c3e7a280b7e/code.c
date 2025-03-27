@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
@@ -10,15 +9,26 @@ int main() {
     // Input the array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-        // Reverse the array while taking input
     }
 
-    for(int i=0;i<n;i++)
-    {
-        if(arr[i]==0)
-        {
-            arr[i+1]=arr[i];
+    int index = 0; // Position to place non-zero elements
+
+    // Move non-zero elements to the front
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
+            arr[index++] = arr[i];
         }
-        printf("%d",arr[i]);
     }
+
+    // Fill remaining positions with 0
+    while (index < n) {
+        arr[index++] = 0;
+    }
+
+    // Print the modified array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
 }
