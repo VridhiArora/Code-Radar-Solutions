@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
@@ -12,11 +11,22 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    for(int i=0;i<n;i++)
-    {
-        if(arr[i]>arr[n-1])
-        {
-            printf("%d",arr[i]);
+    // Find leaders using a nested loop
+    for (int i = 0; i < n; i++) {
+        int isLeader = 1; // Assume arr[i] is a leader
+
+        // Compare with all elements to its right
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] < arr[j]) { // If any right element is greater, not a leader
+                isLeader = 0;
+                break;
+            }
+        }
+
+        if (isLeader) {
+            printf("%d ", arr[i]);
         }
     }
+
+    return 0;
 }
