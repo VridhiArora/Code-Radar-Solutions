@@ -17,29 +17,29 @@ int main() {
         return 0;
     }
 
-    // Initialize largest and second largest properly
-    int i;
-    int largest = arr[0], sec = arr[i+1];
+    // Initialize smallest and second smallest
+    int smallest = arr[0], secondSmallest = 1000000; // Large number to start
 
-    // Find largest element first
-    for ( i = 1; i < n; i++) {
-        if (arr[i] > largest) {
-            largest = arr[i];
+    // Find the smallest element first
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
         }
     }
 
-    // Find second largest
-     // Set sec to a very small number
+    // Find the second smallest element
     for (int i = 0; i < n; i++) {
-        if (arr[i] < sec && arr[i] > largest) {
-            sec = arr[i];
+        if (arr[i] > smallest && arr[i] < secondSmallest) {
+            secondSmallest = arr[i];
         }
-         printf("%d\n", sec);
     }
 
-    // If second largest is unchanged, all numbers are the same
-   
-       
+    // If second smallest is unchanged, all numbers are the same
+    if (secondSmallest == 1000000) {
+        printf("-1");
+    } else {
+        printf("%d\n", secondSmallest);
     }
 
-    
+    return 0;
+}
