@@ -25,10 +25,7 @@ int main()
                 
             }
         }printf("%d",even);
-        else 
-        {
-            printf("-1");
-        }
+        
        
     }
     
