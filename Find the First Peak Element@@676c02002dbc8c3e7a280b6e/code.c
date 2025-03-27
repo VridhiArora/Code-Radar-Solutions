@@ -28,7 +28,7 @@ int main() {
     }
 
     // Printing the second largest number
-    printf("%d\n", secondLargest);
+    printf("%d\n", largest);
 
     return 0;
 }
