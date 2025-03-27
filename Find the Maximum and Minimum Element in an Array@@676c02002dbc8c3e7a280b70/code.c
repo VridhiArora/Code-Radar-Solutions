@@ -3,11 +3,8 @@
 int main()
 {
     int n;
-    printf("enter the value o n: ");
     scanf("%d",&n);
-    int arr[n];
-    
-    scanf("%d",&n);
+    printf("%d",n);
     int arr[n];
     
    
