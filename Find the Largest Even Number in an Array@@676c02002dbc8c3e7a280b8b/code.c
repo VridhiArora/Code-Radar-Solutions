@@ -24,7 +24,7 @@ int main() {
 
     // If `even` is unchanged, no even number exists
     if (even == -100000000) {
-        printf("No even number\n");
+        printf("-1");
     } else {
         printf("%d\n", even);
     }
