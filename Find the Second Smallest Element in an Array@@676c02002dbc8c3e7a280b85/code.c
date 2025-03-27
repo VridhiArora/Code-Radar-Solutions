@@ -18,7 +18,7 @@ int main() {
     }
 
     // Initialize largest and second largest properly
-    int largest = arr[0], sec = arr[0];
+    int largest = arr[0], sec = arr[i+1];
 
     // Find largest element first
     for (int i = 1; i < n; i++) {
@@ -28,19 +28,17 @@ int main() {
     }
 
     // Find second largest
-    sec = 1000000;  // Set sec to a very small number
+     // Set sec to a very small number
     for (int i = 0; i < n; i++) {
         if (arr[i] < sec && arr[i] > largest) {
             sec = arr[i];
         }
+         printf("%d\n", sec);
     }
 
     // If second largest is unchanged, all numbers are the same
-    if (sec == 1000000) {
-        printf("No second largest number\n");
-    } else {
-        printf("%d\n", sec);
+   
+       
     }
 
-    return 0;
-}
+    
