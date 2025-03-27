@@ -14,10 +14,10 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int large=arr[i];
+    
     for(int i=0;i<n;i++)
     {
-        if(large>a)
+        if(arr[i]>a)
         count++;
     }
     printf("%d",count);
